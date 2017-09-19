@@ -19,6 +19,3 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-
-Route::get('/prueba', ['as' => 'home', 'uses' => 'PagesController@home']);
-
